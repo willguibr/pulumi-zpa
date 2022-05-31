@@ -1,9 +1,6 @@
 import * as pulumi from "@pulumi/pulumi";
 import * as zpa from "@willguibr/zpa"
 
-const lssClientTypes = zpa.getZPABaCertificate(args?: zpa.GetZPABaCertificateArgs{
-    name:
+const baCertificate = zpa.getZPABaCertificateOutput()
 
-});
-
-export const clientTypes = lssClientTypes.then(x => x.id)
+// export const clientTypes = lssClientTypes.then(x => x.id)

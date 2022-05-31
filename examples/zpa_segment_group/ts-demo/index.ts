@@ -1,13 +1,15 @@
 import * as pulumi from "@pulumi/pulumi";
 import * as zpa from "@willguibr/zpa";
 
-const instance = new zpa.ZPASegmentGroup("segment-group", {
+const segmentGroup = new zpa.ZPASegmentGroup("segment-group", {
     name:          "pulumi-test",
     description:   "pulumi-test",
     enabled: true,
     policyMigrated: true,
     tcpKeepAliveEnabled: "1",
 });
+
+export const segGroupId = segmentGroup.id;
 
 const appConnectorGroup = new zpa.ZPAAppConnectorGroup("app-connector-group", {
     name                     : "Pulumi Connector Group",
@@ -25,9 +27,14 @@ const appConnectorGroup = new zpa.ZPAAppConnectorGroup("app-connector-group", {
 
 });
 
+export const appConnectorGroupId = appConnectorGroup.id;
+
 const applicationServer = new zpa.ZPAApplicationServer("application-server", {
     name                     : "pulumi.securitygeek.io",
     description              : "pulumi.securitygeek.io",
     enabled                  : true,
     address                  : "pulumi.securitygeek.io",
 });
+
+export const serverId = applicationServer.id;
+
