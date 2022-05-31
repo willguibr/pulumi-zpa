@@ -256,8 +256,8 @@ func Provider() tfbridge.ProviderInfo {
 	return prov
 }
 
-func noUpstreamDocs() *tfbridge.DocInfo {
-	return &tfbridge.DocInfo{
-		Markdown: []byte(" "),
-	}
-}
+// func noUpstreamDocs() *tfbridge.DocInfo {
+// 	return &tfbridge.DocInfo{
+// 		Markdown: []byte(" "),
+// 	}
+// }

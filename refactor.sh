@@ -2,19 +2,19 @@
 
 # pushd ../
 # popd
-echo # --------Install NodeJS SDKs--------
-rm -rf ~/.config/yarn/link/@willguibr
-make tfgen && make build_nodejs
-make install_nodejs_sdk
-cp bin/pulumi-resource-zpa $HOME/go/bin
+# echo # --------Install NodeJS SDKs--------
+# rm -rf ~/.config/yarn/link/@willguibr
+# make tfgen && make build_nodejs
+# make install_nodejs_sdk
+# cp bin/pulumi-resource-zpa $GOPATH/bin
 # mkdir -p examples/zpa_segment_group
 # cd examples/zpa_segment_group
 
-# echo # --------Install Python SDKs--------
-# rm -rf ~/.config/yarn/link/@willguibr
-# make tfgen && make build_python
-# make install_python_sdk
-# cp bin/pulumi-resource-zpa $GOPATH/bin/
+echo # --------Install Python SDKs--------
+rm -rf ~/.config/yarn/link/@willguibr
+make tfgen && make build_python
+make install_python_sdk
+cp bin/pulumi-resource-zpa $GOPATH/bin
 # mkdir -p examples/test-demo
 # cd examples/test-demo/
 
