@@ -50,5 +50,5 @@ export function getVersion(): string {
 
 /** @internal */
 export function resourceOptsDefaults(): any {
-    return { version: getVersion(), pluginDownloadURL: "https://github.com/willguibr/pulumi-zpa/releases/download/v${VERSION}" };
+    return { version: getVersion() };
 }

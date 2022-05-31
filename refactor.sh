@@ -2,33 +2,33 @@
 
 # pushd ../
 # popd
-# echo # --------Install NodeJS SDKs--------
-# rm -rf ~/.config/yarn/link/@willguibr
-# make tfgen && make build_sdks
-# make install_nodejs_sdk
-# cp bin/pulumi-resource-zpa $GOPATH/bin/
+echo # --------Install NodeJS SDKs--------
+rm -rf ~/.config/yarn/link/@willguibr
+make tfgen && make build_nodejs
+make install_nodejs_sdk
+cp bin/pulumi-resource-zpa $HOME/go/bin
 # mkdir -p examples/zpa_segment_group
 # cd examples/zpa_segment_group
 
 # echo # --------Install Python SDKs--------
 # rm -rf ~/.config/yarn/link/@willguibr
-# make tfgen && make build_sdks
+# make tfgen && make build_python
 # make install_python_sdk
 # cp bin/pulumi-resource-zpa $GOPATH/bin/
 # mkdir -p examples/test-demo
 # cd examples/test-demo/
 
-echo # --------Install GO SDKs--------
-rm -rf ~/.config/yarn/link/@willguibr
-make tfgen && make build_go
-make install_go_sdk
-cp bin/pulumi-resource-zpa $GOPATH/bin/
+# echo # --------Install GO SDKs--------
+# rm -rf ~/.config/yarn/link/@willguibr
+# make tfgen && make build_go
+# make install_go_sdk
+# cp bin/pulumi-resource-zpa $GOPATH/bin/
 # mkdir -p examples/test-demo
 # cd examples/test-demo/
 
-# echo # --------Install GO SDKs--------
+# echo # --------Install DotNet SDKs--------
 # rm -rf ~/.config/yarn/link/@willguibr
-# make tfgen && make build_sdks
+# make tfgen && make build_dotnet
 # make install_dotnet_sdk
 # cp bin/pulumi-resource-zpa $GOPATH/bin/
 # mkdir -p examples/test-demo

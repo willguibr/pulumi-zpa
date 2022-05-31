@@ -9,7 +9,6 @@
     "license": "Apache-2.0",
     "attribution": "This Pulumi package is based on the [`zpa` Terraform Provider](https://github.com/willguibr/terraform-provider-zpa).",
     "repository": "https://github.com/willguibr/pulumi-zpa",
-    "pluginDownloadURL": "https://github.com/willguibr/pulumi-zpa/releases/download/v${VERSION}",
     "meta": {
         "moduleFormat": "(.*)(?:/[^/]*)"
     },
@@ -17,7 +16,7 @@
         "csharp": {
             "compatibility": "tfbridge20",
             "namespaces": {
-                "index": "index",
+                "index": "Index",
                 "zpa": "willguibr"
             },
             "packageReferences": {

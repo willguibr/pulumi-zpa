@@ -1,0 +1,5 @@
+{
+  "resource": true,
+  "name": "zpa",
+  "server": "https://github.com/willguibr/pulumi-zpa/releases/download/v${VERSION}"
+}
