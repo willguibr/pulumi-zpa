@@ -1,7 +1,7 @@
 //go:build nodejs || all
 // +build nodejs all
 
-package examples
+package main
 
 import (
 	"path/filepath"
